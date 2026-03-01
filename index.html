@@ -34,7 +34,7 @@
             border-bottom:1px solid rgba(245,200,66,0.09);
         }
         .nav-brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
-        .nav-brand img { height:34px; width:34px; object-fit:contain; }
+        .nav-brand img { height:34px; width:34px; object-fit:cover; object-position:center 25%; border-radius:6px; }
         .nav-brand span { font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--gold); letter-spacing:0.06em; }
         .nav-links { display:flex; gap:36px; list-style:none; }
         .nav-links a { color:var(--muted); text-decoration:none; font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase; transition:color .3s; }
@@ -64,8 +64,8 @@
         }
 
         .hero-logo {
-            width:96px; height:96px; object-fit:contain;
-            margin:0 auto 28px; display:block;
+            width:96px; height:96px; object-fit:cover; object-position:center 25%;
+            margin:0 auto 28px; display:block; border-radius:20px;
             filter:drop-shadow(0 0 40px rgba(245,200,66,0.42));
             animation:riseIn .9s .1s ease both;
         }
@@ -314,7 +314,7 @@
             display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;
         }
         .footer-brand { display:flex; align-items:center; gap:10px; }
-        .footer-brand img { height:26px; width:26px; object-fit:contain; }
+        .footer-brand img { height:26px; width:26px; object-fit:cover; object-position:center 25%; border-radius:5px; }
         .footer-brand span { font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--gold); letter-spacing:0.06em; }
         .footer-links { display:flex; gap:28px; }
         .footer-links a { font-size:0.78rem; color:var(--muted); text-decoration:none; letter-spacing:0.05em; transition:color .3s; }
@@ -345,7 +345,7 @@
 <!-- NAV -->
 <nav class="nav">
     <a href="#" class="nav-brand">
-        <img src="/mnt/user-data/uploads/ChatGPT_Image_Aug_14__2025__10_09_21_AM.png" alt="Helios">
+        <img src="img/logo.png" alt="Helios">
         <span>Helios</span>
     </a>
     <ul class="nav-links">
@@ -361,7 +361,7 @@
 <section class="hero">
     <div class="hero-inner">
         <div class="hero-badge">Examen pratique du permis de conduire</div>
-        <img src="/mnt/user-data/uploads/ChatGPT_Image_Aug_14__2025__10_09_21_AM.png" alt="Helios" class="hero-logo">
+        <img src="img/logo.png" alt="Helios" class="hero-logo">
 
         <div class="points-visual">
             <div class="point-circle">1</div>
@@ -588,7 +588,7 @@
 <!-- FOOTER -->
 <footer class="footer">
     <div class="footer-brand">
-        <img src="/mnt/user-data/uploads/ChatGPT_Image_Aug_14__2025__10_09_21_AM.png" alt="Helios">
+        <img src="img/logo.png" alt="Helios">
         <span>Helios</span>
     </div>
     <div class="footer-links">
