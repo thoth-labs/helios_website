@@ -78,14 +78,40 @@ em { font-style:normal; }
 .footer-brand { display:flex; align-items:center; gap:10px; }
 .footer-brand img { height:26px; width:26px; object-fit:cover; object-position:center center; border-radius:5px; }
 .footer-brand span { font-family:'DM Sans',sans-serif; font-size:1.1rem; font-weight:700; color:var(--amber); letter-spacing:0.06em; }
-.footer-links { display:flex; gap:28px; }
+.footer-links { display:flex; flex-wrap:wrap; gap:12px 28px; }
 .footer-links a { font-size:0.78rem; color:var(--muted); text-decoration:none; letter-spacing:0.05em; transition:color .3s; }
 .footer-links a:hover { color:var(--amber); }
 .footer-copy { font-size:0.75rem; color:var(--muted); }
+
+/* ─── CONSENTEMENT COOKIES ─── */
+.consent-banner {
+    position:fixed; left:24px; right:24px; bottom:24px; z-index:1000; max-width:760px; margin:0 auto;
+    background:var(--ink-light); border:1px solid rgba(255,193,7,0.25); border-radius:10px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5); padding:20px 24px;
+    display:flex; align-items:center; gap:24px;
+}
+.consent-banner[hidden] { display:none; }
+.consent-text { font-size:0.82rem; line-height:1.6; color:var(--muted); }
+.consent-text strong { color:var(--text); font-weight:500; }
+.consent-text a { color:var(--amber); }
+.consent-actions { display:flex; gap:10px; flex-shrink:0; }
+.consent-btn {
+    font:inherit; font-size:0.8rem; font-weight:500; letter-spacing:0.06em; cursor:pointer;
+    padding:10px 22px; border-radius:3px; border:1px solid var(--amber);
+    background:var(--amber); color:var(--ink); transition:background .2s;
+}
+.consent-btn:hover { background:var(--amber-soft); }
+.footer-links button.footer-link-btn {
+    font:inherit; font-size:0.78rem; color:var(--muted); letter-spacing:0.05em;
+    background:none; border:0; padding:0; cursor:pointer; transition:color .3s;
+}
+.footer-links button.footer-link-btn:hover { color:var(--amber); }
 
 /* ─── RESPONSIVE (nav + footer only) ─── */
 @media (max-width:900px) {
     .nav { padding:18px 24px; }
     .nav-links { display:none; }
     .footer { flex-direction:column; align-items:flex-start; padding:28px 24px; }
+    .consent-banner { left:12px; right:12px; bottom:12px; flex-direction:column; align-items:stretch; gap:14px; padding:18px; }
+    .consent-actions .consent-btn { flex:1; }
 }

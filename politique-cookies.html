@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de cookies — Helios</title>
+    <meta name="description" content="Politique de cookies du site Helios : cookies de mesure d'audience Google Analytics, consentement, durée de conservation et gestion de vos choix.">
+    <link rel="canonical" href="https://helios.thoth.fr/politique-cookies.html">
+    <meta name="theme-color" content="#0D2A39">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="consent.js?v=1"></script>
+    <style>
+        .page { max-width:780px; margin:0 auto; padding:140px 64px 100px; }
+        .page-eyebrow { font-size:0.7rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--amber); margin-bottom:14px; }
+        .page-title { font-family:'DM Sans',sans-serif; font-size:clamp(2rem,4vw,3rem); font-weight:700; color:var(--white); margin-bottom:48px; }
+        .section { margin-bottom:44px; }
+        .section h2 {
+            font-family:'DM Sans',sans-serif; font-size:1.1rem; font-weight:500; color:var(--amber);
+            margin-bottom:14px; padding-bottom:10px;
+            border-bottom:1px solid rgba(255,193,7,0.12);
+        }
+        .section p, .section li { font-size:0.9rem; color:var(--muted); line-height:1.85; }
+        .section p + p { margin-top:10px; }
+        .section strong { color:var(--text); font-weight:500; }
+        .section a { color:var(--amber); text-decoration:none; }
+        .section a:hover { text-decoration:underline; }
+        @media (max-width:900px) { .page { padding:120px 24px 80px; } }
+        .page-date { font-size:0.8rem; color:var(--muted); margin:-36px 0 48px; }
+        .cookie-table { width:100%; border-collapse:collapse; margin-top:14px; font-size:0.85rem; }
+        .cookie-table th, .cookie-table td { text-align:left; padding:10px 12px; border-bottom:1px solid rgba(255,255,255,0.08); color:var(--muted); vertical-align:top; }
+        .cookie-table th { color:var(--text); font-weight:500; }
+        .cookie-table code { color:var(--amber-soft); }
+        .table-wrap { overflow-x:auto; }
+        .consent-status { margin-top:14px; }
+        .consent-status-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <a href="index.html" class="nav-brand">
+        <img src="img/logo.png" alt="" width="34" height="34">
+        <span>Helios</span>
+    </a>
+</nav>
+
+<main class="page">
+    <p class="page-eyebrow">Vie privée</p>
+    <h1 class="page-title">Politique de cookies</h1>
+    <p class="page-date">Dernière mise à jour : octobre 2026</p>
+
+    <div class="section">
+        <h2>1. Qu'est-ce qu'un cookie ?</h2>
+        <p>Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, smartphone, tablette) lors de la consultation d'un site. Il permet notamment de reconnaître votre navigateur lors de visites ultérieures.</p>
+        <p>Conformément à l'article 82 de la loi Informatique et Libertés et aux recommandations de la CNIL, les cookies non strictement nécessaires au fonctionnement du site ne sont déposés <strong>qu'avec votre consentement préalable</strong>.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Cookies utilisés sur ce site</h2>
+        <p><strong>Cookies de mesure d'audience (soumis à consentement).</strong> Si vous les acceptez, nous utilisons <strong>Google Analytics 4</strong> (Google Ireland Limited) pour connaître la fréquentation du site (pages vues, provenance, type d'appareil) et l'améliorer. Ces statistiques sont agrégées. Les signaux Google et la personnalisation publicitaire sont <strong>désactivés</strong>.</p>
+        <div class="table-wrap">
+            <table class="cookie-table">
+                <thead><tr><th>Cookie</th><th>Émetteur</th><th>Finalité</th><th>Durée</th></tr></thead>
+                <tbody>
+                    <tr><td><code>_ga</code></td><td>Google Analytics</td><td>Distinguer les visiteurs de façon pseudonyme</td><td>13 mois</td></tr>
+                    <tr><td><code>_ga_S4L1F82Z5G</code></td><td>Google Analytics</td><td>Conserver l'état de la session</td><td>13 mois</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="margin-top:14px;"><strong>Stockage strictement nécessaire (exempté de consentement).</strong> Votre choix concernant les cookies est enregistré dans le stockage local de votre navigateur (<code>helios-consent</code>) afin de ne pas vous redemander à chaque visite. Il est conservé <strong>6 mois</strong>, après quoi votre choix vous sera de nouveau demandé.</p>
+        <p>Aucun cookie publicitaire ni de réseau social n'est déposé par ce site.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Gérer votre choix</h2>
+        <p>Refuser les cookies n'a aucune incidence sur votre navigation. Vous pouvez modifier votre choix à tout moment, ici ou via le lien « Gérer les cookies » en bas de chaque page. En cas de retrait, les cookies Google Analytics sont supprimés.</p>
+        <p class="consent-status">Statut actuel : <strong id="consent-status">non défini</strong></p>
+        <div class="consent-status-actions">
+            <button type="button" class="consent-btn" data-set-consent="denied">Refuser</button>
+            <button type="button" class="consent-btn" data-set-consent="granted">Accepter</button>
+        </div>
+        <p style="margin-top:14px;">Vous pouvez également configurer votre navigateur pour bloquer les cookies, ou installer le <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">module de désactivation de Google Analytics</a>.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Données et transferts</h2>
+        <p>Les données de mesure d'audience sont conservées <strong>2 mois</strong> dans Google Analytics, puis supprimées. Google Analytics 4 n'enregistre pas votre adresse IP complète. Google pouvant traiter ces données aux États-Unis, ce transfert est encadré par le <strong>Data Privacy Framework UE-États-Unis</strong> et les <strong>clauses contractuelles types</strong> de la Commission européenne.</p>
+        <p>Pour en savoir plus sur vos droits, consultez notre <a href="confidentialite.html">politique de confidentialité</a>.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Contact</h2>
+        <p>Thoth Technologies — <a href="mailto:contact@thoth.fr">contact@thoth.fr</a><br>
+        3 Terrasse Le Nôtre, 94220 Charenton-le-Pont, France</p>
+    </div>
+</main>
+
+<script>
+    (function () {
+        var label = { granted: 'cookies de mesure d’audience acceptés', denied: 'cookies de mesure d’audience refusés' };
+        var el = document.getElementById('consent-status');
+        function render(v) { el.textContent = label[v] || 'non défini'; }
+        render(window.HeliosConsent && HeliosConsent.get());
+        document.addEventListener('helios-consent-change', function (e) { render(e.detail); });
+        document.querySelectorAll('[data-set-consent]').forEach(function (b) {
+            b.addEventListener('click', function () { HeliosConsent.set(b.getAttribute('data-set-consent')); });
+        });
+    })();
+</script>
+
+<footer class="footer">
+    <div class="footer-brand">
+        <img src="img/logo.png" alt="" width="26" height="26" loading="lazy">
+        <span>Helios</span>
+    </div>
+    <div class="footer-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="politique-cookies.html">Cookies</a>
+        <button type="button" class="footer-link-btn" data-consent-open>Gérer les cookies</button>
+        <a href="mailto:contact@thoth.fr">Contact</a>
+    </div>
+    <span class="footer-copy">© 2026 Thoth Technologies. Tous droits réservés.</span>
+</footer>
+
+</body>
+</html>
